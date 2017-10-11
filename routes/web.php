@@ -16,3 +16,7 @@ Route::get('/esportes', function(){
    );
    return view('esporte', compact('titulo','esportes')); 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
